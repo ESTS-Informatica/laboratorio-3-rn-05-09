@@ -15,6 +15,7 @@ public class Transport {
     private double price;
     private double fees;
     private boolean available;
+    private ShippingCompany company;
 
     public Transport() {
         this.id = "T-" + String.format("%03d", ++auto);
@@ -23,6 +24,7 @@ public class Transport {
         this.price = 0.0;
         this.fees = 0.0;
         this.available = true;
+        this.company = new ShippingCompany("RELIABLE-MOVING");
     }
 
     public String getOrigin() {
